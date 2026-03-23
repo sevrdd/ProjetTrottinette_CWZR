@@ -7,4 +7,7 @@
     - Création du Bom
     - Installation TouchGFX
 
-    
+## 9 mars
+    - Début du PCB
+## 16
+    - Finalisation du PCB
