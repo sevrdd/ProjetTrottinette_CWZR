@@ -1,0 +1,21 @@
+{
+    "model_num": 1,
+    "FW_ver": 1.0,
+    "HW_ver": 1.0,
+    "ctrl": {
+        "state": "DRIVE",
+        "break_active": "false",
+        "estop_active": "true",
+        "enable_active": "true",
+        "light_active": "true",
+        "fault_code": "none",
+        "cmd": 0
+    },
+    "drive": {
+        "temperature": 25.49,
+        "battery_percentage": 100.0,
+        "motor_current": 200.5,
+        "motor_mode": "turtle",
+        "speed": 41
+    }
+}
