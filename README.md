@@ -38,7 +38,7 @@ La section "Code" du dépôt github contient les codes suivant :
 ## Utilisation
 
 ### Pour un utilisateur
-[Guide](./guide.md)
+Voir [Guide d'utilisateur](<Guide d'utilisateur/guide.md>)
 
 ### Pour un developpeur
 
