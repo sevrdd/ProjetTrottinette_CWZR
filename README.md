@@ -38,7 +38,8 @@ La section "Code" du dépôt github contient les codes suivant :
 ## Utilisation
 
 ### Pour un utilisateur
-
+- Branché le tableau de bord à la trottinette
+- Branché l'écran au tableau de bord
 ### Pour un developpeur
 
 ### Prochaines étapes (todo)
