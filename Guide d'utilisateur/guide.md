@@ -6,4 +6,12 @@ Pour retourner au README clické [ici](<../README.md>)
 
 ### Affichage
 
-![Alt text](Affichage.png "Optional Title")
+![Alt text](AffichageNum.png "Optional Title")
+
+    1. Affiche l'état des lumières
+    2. Affiche la température
+    3. Affiche l'état de la batterie
+    4. Affiche le courant des moteurs (A)
+    5. Affiche la puissace utilisé
+    6. Affiche le mode d'utilisation (turtle ou rabbit)
+    7. Affiche la vitesse (km/h)
