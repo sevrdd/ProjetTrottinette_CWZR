@@ -5,8 +5,8 @@ Pour retourner au README clické [ici](<../README.md>)
 ### Branchement
 
 ### Affichage
-
-![Alt text](AffichageNum.png "Optional Title")
+En mode DRIVE 
+![Alt text](AffichageNum.png "Affichage DRIVE")
 
     1. Affiche l'état des lumières
     2. Affiche la température
@@ -15,3 +15,13 @@ Pour retourner au README clické [ici](<../README.md>)
     5. Affiche la puissace utilisé
     6. Affiche le mode d'utilisation (turtle ou rabbit)
     7. Affiche la vitesse (km/h)
+
+EN mode INIT et ERROR
+![Alt text](AffichageINIT.png "Affichage INIT")
+
+    1. Codes d'erreurs
+    2. État des freins d'urgence
+    3. Versions du programme
+    4. État des clé
+    5. Mode
+
