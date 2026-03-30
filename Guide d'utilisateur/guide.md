@@ -5,3 +5,5 @@ Pour retourner au README clické [ici](<../README.md>)
 ### Branchement
 
 ### Affichage
+
+![Alt text](Affichage.png "Optional Title")
