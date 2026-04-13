@@ -2,32 +2,33 @@
 
 Zachary Roy, William Champagne
 
-Tableau de bord de trottinette
+Écran de tableau de bord pour trottinette électrique. 
 
-Traiter et présenter de manière claire et ergonomique au conducteurs les données de la trottinette.
+Ce tableau de bord est capable d'afficher les informations concernant la trottinette de façons éfficace, précise et éfficace sur un écran.
 
 ## Prérequis
-Une trottinette fonctionelle auquelle le module de tableau de bord est branché.
+Une trottinette fonctionelle (*nom du modèle de la trottinette ici*) auquelle le module de tableau de bord est branché.
 
 ### Matériel
-- Boitier
-- PCB    
-- Écran (raspberry PI)
+- **1.** Boitier
+- **2.** PCB    
+- **3.** Écran (raspberry PI)
 ### Logiciel
-- PCB -> Altium
-- Code -> STM32CubeIDE et VsCode
-- Modèle 3D -> Fusion 360
+- **1.** Altium -> PCB 
+- **2.** STM32CubeIDE et VsCode -> Code pour le STM32 du PCB et Code pour le Raspberry pi 
+- **3.** Fusion 360 -> Modèle 3D 
 
 ### Limitations
 L'affichage est limité à une vitesse de rafraîchissement de 5 Hz
+La version actuelle est limitée a une utilisation stationnaire dû à l'écran hdmi nécéssitant une station fixe.
 
 ## Structure
 
 ### Schéma
 La section "Schematics" du dépôt github contient les shémas suivant : 
-- Shéma bloc
-- Shéma électrique
-- Organigramme  
+- **1.** Shéma bloc *Vielle version* 
+- **2.** Shéma électrique 
+- **3.** Ordinogrammes | Pour le code du raspberry pi (*Ordinogramme 1*) et le code du STM32 (*Ordinogramme 2*)
 
 ### Dossiers/codes
 La section "Code" du dépôt github contient les codes suivant : 
@@ -36,6 +37,9 @@ La section "Code" du dépôt github contient les codes suivant :
 ### Tests/validation
 
 ## Utilisation
+- **1.** Brancher et allumer les composantes
+- **2.** Lancer le logiciel *tk_main.exe* (À faire un executable du code python)
+- **3.** Utiliser la trottinette
 
 ### Pour un utilisateur
 Voir [Guide d'utilisateur](<Guide d'utilisateur/guide.md>)
