@@ -5,7 +5,9 @@ Pour retourner au README clicker [ici](<../README.md>)
 ### Branchement
 
 - **1.** Alimenter le PCB avec l'alimentation 12V
-- **2.** Brancher le cable HDMI dans le port HDMI du raspberry pi
+- **2.** Brancher le cable HDMI dans le port HDMI du Raspberry Pi
+- **3.** Alimenter le Raspberry Pi avec un cable USB-C
+- **5.** Brancher le BMI avec un câble I2C | Exemple: [4399](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4399/10824268?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrVaYoQh6BjAgbfN6MktjoXuiRVQwjho6AzrgFkBbMqADUwDK0_j78aAlHEEALw_wcB)
 
 ### Affichage
 **En mode DRIVE:** 
