@@ -45,6 +45,6 @@ La section "Code" du dépôt github contient les codes suivant :
 Voir [Guide d'utilisateur](<Guides/guide_user.md>)
 
 ### Pour un developpeur
-Voir [Guide d'utilisateur](<Guides/guide_dev.md>)
+Voir [Guide de développement](<Guides/guide_dev.md>)
 
 ### Prochaines étapes (todo)
