@@ -42,8 +42,9 @@ La section "Code" du dépôt github contient les codes suivant :
 - **3.** Utiliser la trottinette
 
 ### Pour un utilisateur
-Voir [Guide d'utilisateur](<Guide d'utilisateur/guide.md>)
+Voir [Guide d'utilisateur](<Guides/guide_user.md>)
 
 ### Pour un developpeur
+Voir [Guide d'utilisateur](<Guides/guide_dev.md>)
 
 ### Prochaines étapes (todo)
