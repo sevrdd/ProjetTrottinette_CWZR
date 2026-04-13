@@ -4,8 +4,11 @@ Ceci est le guide d'utilisateur. Il contient les branchements du module tableau 
 Pour retourner au README clické [ici](<../README.md>)
 ### Branchement
 
+Brancher le cable HDMI dans le port HDMI du raspberry pi
+
 ### Affichage
-En mode DRIVE 
+En mode DRIVE: 
+
 ![Alt text](AffichageNum.png "Affichage DRIVE")
 
     1. Affiche l'état des lumières
@@ -16,7 +19,8 @@ En mode DRIVE
     6. Affiche le mode d'utilisation (turtle ou rabbit)
     7. Affiche la vitesse (km/h)
 
-EN mode INIT et ERROR
+EN mode INIT et ERROR:
+
 ![Alt text](AffichageINIT.png "Affichage INIT")
 
     1. Codes d'erreurs
@@ -25,3 +29,39 @@ EN mode INIT et ERROR
     4. État des clé
     5. Mode
 
+### Codes d'erreurs
+
+En mode erreur (ERROR), une variétée de codes d'erreurs différents peuvent s'afficher à l'écran. Ci dessous se présente une liste des erreurs possibles avec une courte déscription.
+
+## Fault Status
+
+**FAULT:** at least 1 fault active  
+
+### General Driver Faults
+- **VDS_OCP:** DRV - VDS monitor overcurrent  
+- **GDF:** DRV - gate drive fault  
+- **UVLO:** DRV - undervoltage lockout  
+- **OTSD:** DRV - overtemperature shutdown  
+- **OTW:** DRV - overtemperature warning  
+- **CPUV:** DRV - charge pump undervoltage fault condition  
+
+### Phase A Faults
+- **VDS_HA:** DRV - VDS overcurrent fault on the A high-side  
+- **VDS_LA:** DRV - VDS overcurrent fault on the A low-side  
+- **SA_OC:** DRV - overcurrent on phase A sense amplifier  
+- **VGS_HA:** DRV - gate drive fault on the A high-side MOSFET  
+- **VGS_LA:** DRV - gate drive fault on the A low-side MOSFET  
+
+### Phase B Faults
+- **VDS_HB:** DRV - VDS overcurrent fault on the B high-side  
+- **VDS_LB:** DRV - VDS overcurrent fault on the B low-side  
+- **SB_OC:** DRV - overcurrent on phase B sense amplifier  
+- **VGS_HB:** DRV - gate drive fault on the B high-side MOSFET  
+- **VGS_LB:** DRV - gate drive fault on the B low-side MOSFET  
+
+### Phase C Faults
+- **VDS_HC:** DRV - VDS overcurrent fault on the C high-side  
+- **VDS_LC:** DRV - VDS overcurrent fault on the C low-side  
+- **SC_OC:** DRV - overcurrent on phase C sense amplifier  
+- **VGS_HC:** DRV - gate drive fault on the C high-side MOSFET  
+- **VGS_LC:** DRV - gate drive fault on the C low-side MOSFET  
