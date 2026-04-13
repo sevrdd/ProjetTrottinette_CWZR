@@ -1,6 +1,6 @@
 ## Guide d'utilisateur
 ### Descritption
-Ceci est le guide d'utilisateur. Il contient les branchements du module tableau de bord et un explication complète de son affichage
+Ceci est le guide de développement. Il contient les branchements du module tableau de bord et un explication complète de son affichage, branchement et déboggage.
 Pour retourner au README clicker [ici](<../README.md>)
 ### Branchement
 
@@ -8,29 +8,30 @@ Pour retourner au README clicker [ici](<../README.md>)
 - **2.** Brancher le cable HDMI dans le port HDMI du Raspberry Pi
 - **3.** Alimenter le Raspberry Pi avec un cable USB-C
 - **5.** Brancher le BMI avec un câble I2C | Exemple: [4399](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4399/10824268?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrVaYoQh6BjAgbfN6MktjoXuiRVQwjho6AzrgFkBbMqADUwDK0_j78aAlHEEALw_wcB)
+- **6.** Brancher un cable style arduino [1956](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/1956/6827089?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrF_uWWoAdkNR1Ewwv0g-x9TCiTK35vVDDhfwSZ4tV42QfpkmZLDrMaAquCEALw_wcB) entre la patte 1 du Header *J3* (Tx) sur le board STM32 et la patte *insère pin ici* du Raspberry Pi. Refaire ces mêmes opérations entre la patte 3 du header *J3* sur le baord STM32 et la patte *insère l'autre pin ici lol* du Raspberry Pi. Cela établi la communication UART entre le board STM32 et le Raspberry Pi. Images des pattes du board STM32 et du Raspberry Pi.
 
-### Affichage
-**En mode DRIVE:** 
+### Branchement Optionnel
+**Programmation et déboggage:** 
 
-![Alt text](AffichageNum.png "Affichage DRIVE")
+- **1.** Brancher un cable USB-C dans le connecteur USB-C pour accèder au déboggage (port série) et programmation.
+  - Nécessite d'activer la bootstrap (Switch 1) pour entrer en mode Programmation 
+- **2.** Brancher le cable [STLINK-V3MINIE](https://www.digikey.ca/en/products/detail/stmicroelectronics/STLINK-V3MINIE/16284301?gclsrc=aw.ds&gad_source=1&gad_campaignid=20291760415&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrdradtKU4q_vTU92Uq2YcJ_Uhwx3DESK_N5jiYhfYq7sia4Z_wBz0aAmmFEALw_wcB) pour accèder au déboggage (CubeIDE) et programmation (CubeIDE)
 
-- **1.** Affiche l'état des lumières
-- **2.** Affiche la température
-- **3.** Affiche l'état de la batterie
-- **4.** Affiche le courant des moteurs (A)
-- **5.** Affiche la puissace utilisé
-- **6.** Affiche le mode d'utilisation (turtle ou rabbit)
-- **7.** Affiche la vitesse (km/h)
+### Déboggage
 
-**EN mode INIT et ERROR:**
-
-![Alt text](AffichageINIT.png "Affichage INIT")
-
-- **1.** Codes d'erreurs
-- **2.** État des freins d'urgence
-- **3.** Versions du programme
-- **4.** État des clé
-- **5.** Mode
+#### DELs
+- **1.** D1 s'allume quand l'alimentation VDD est présente (Alim Debug)
+- **2.** D2 s'allume quand l'alimentation 12V est présente (Alim Debug)
+- **3.** D3 s'allume quand un signal vers GPIO18 (du (et vers le) control board) est envoyé **To redo**
+- **4.** D4 s'allume quand un signal vers GPIO21 (du (et vers le) control board) est envoyé **To redo**
+- **5.** D4 s'allume quand un signal vers GPIO0 (du (et vers le) control board) est envoyé **To redo**
+- **6.** D5 et D6 sont des DELs de déboggages programmables (à partir du code STM32).
+#### Switches
+- **1.** La switch *S2* (NRST | RESET) permet de réinitialiser le tableau de bord.
+- **2.** La switch *S3* (RESET | CTRL) permet de réinitialiser le board de contrôle.
+- **3.** La switch *S1* (Boot0) est une bootstrap permettant de configurer le boot mode (Mode programmation et Mode "Firmware" | Mode normale)
+#### Points de tests
+- **1.** Plusieurs points de tests sont disponibles pour mesurer les différentes alimentations (12V et 3V3)
 
 ### Codes d'erreurs
 
