@@ -1,6 +1,6 @@
-## Guide d'utilisateur
+## Guide de développement
 ### Descritption
-Ceci est le guide de développement. Il contient les branchements du module tableau de bord et un explication complète de son affichage, branchement et déboggage.
+Ceci est le guide de développement. Il contient les branchements du module tableau de bord et un explication complète de son affichage, branchement, déboggage ainsi qu'un résumé du code 
 Pour retourner au README clicker [ici](<../README.md>)
 ### Branchement
 
@@ -8,7 +8,7 @@ Pour retourner au README clicker [ici](<../README.md>)
 - **2.** Brancher le cable HDMI dans le port HDMI du Raspberry Pi
 - **3.** Alimenter le Raspberry Pi avec un cable USB-C
 - **5.** Brancher le BMI avec un câble I2C | Exemple: [4399](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4399/10824268?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrVaYoQh6BjAgbfN6MktjoXuiRVQwjho6AzrgFkBbMqADUwDK0_j78aAlHEEALw_wcB)
-- **6.** Brancher un cable style arduino [1956](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/1956/6827089?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrF_uWWoAdkNR1Ewwv0g-x9TCiTK35vVDDhfwSZ4tV42QfpkmZLDrMaAquCEALw_wcB) entre la patte 1 du Header *J3* (Tx) sur le board STM32 et la patte *insère pin ici* du Raspberry Pi. Refaire ces mêmes opérations entre la patte 3 du header *J3* sur le baord STM32 et la patte *insère l'autre pin ici lol* du Raspberry Pi. Cela établi la communication UART entre le board STM32 et le Raspberry Pi. Images des pattes du board STM32 et du Raspberry Pi.
+- **6.** Brancher un cable style arduino [1956](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/1956/6827089?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrF_uWWoAdkNR1Ewwv0g-x9TCiTK35vVDDhfwSZ4tV42QfpkmZLDrMaAquCEALw_wcB) entre la patte 1 du header (Tx) *J3* sur la carte STM32 et la patte *insère pin ici* du Raspberry Pi. Refaire ces mêmes opérations entre la patte 3 du header (Rx) *J3* sur la carte STM32 et la patte *insère l'autre pin ici lol* du Raspberry Pi. Cela établi la communication UART entre la carte STM32 et le Raspberry Pi. Images des pattes de la carte STM32 et du Raspberry Pi.
 
 ### Branchement Optionnel
 **Programmation et déboggage:** 
@@ -20,18 +20,25 @@ Pour retourner au README clicker [ici](<../README.md>)
 ### Déboggage
 
 #### DELs
-- **1.** D1 s'allume quand l'alimentation VDD est présente (Alim Debug)
+- **1.** D1 s'allume quand l'alimentation VDD (3V3) est présente (Alim Debug)
 - **2.** D2 s'allume quand l'alimentation 12V est présente (Alim Debug)
-- **3.** D3 s'allume quand un signal vers GPIO18 (du (et vers le) control board) est envoyé **To redo**
-- **4.** D4 s'allume quand un signal vers GPIO21 (du (et vers le) control board) est envoyé **To redo**
-- **5.** D4 s'allume quand un signal vers GPIO0 (du (et vers le) control board) est envoyé **To redo**
+- **3.** D3 s'allume quand un signal vers GPIO18 (vers la carte contrôle) est envoyé **To redo**
+- **4.** D4 s'allume quand un signal vers GPIO21 (vers la carte contrôle) est envoyé **To redo**
+- **5.** D4 s'allume quand un signal vers GPIO0 (vers la carte contrôle) est envoyé **To redo**
 - **6.** D5 et D6 sont des DELs de déboggages programmables (à partir du code STM32).
 #### Switches
 - **1.** La switch *S2* (NRST | RESET) permet de réinitialiser le tableau de bord.
-- **2.** La switch *S3* (RESET | CTRL) permet de réinitialiser le board de contrôle.
+- **2.** La switch *S3* (RESET | CTRL) permet de réinitialiser la carte de contrôle.
 - **3.** La switch *S1* (Boot0) est une bootstrap permettant de configurer le boot mode (Mode programmation et Mode "Firmware" | Mode normale)
 #### Points de tests
-- **1.** Plusieurs points de tests sont disponibles pour mesurer les différentes alimentations (12V et 3V3)
+- **1.** Un point de test est disponible pour mesurer la tension de l'alimentation 12V.
+- **2.** Un autre point de test est disponible pour accèder au ground.
+- **3.** Il est possible d'analyser l'échange de données entre la carte du tableau de bord et le raspberry pi en utilisant la patte 1 du header (Tx) *J3* et la patte 3 du header (Tx) *J3*. Cependant, l'analyse de donnée ne peut pas se faire en même temps que la connection avec le raspberry pi (à moins d'utiliser un splitter ou autre méthode semblable).
+
+### Résumé du code
+
+#### tk_main_exp.py
+-**  
 
 ### Codes d'erreurs
 
