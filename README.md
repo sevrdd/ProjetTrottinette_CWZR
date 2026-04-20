@@ -30,17 +30,32 @@ La version actuelle est limitée a une utilisation stationnaire dû à l'écran 
 
 ### 3DModels
 Cette section recueille les modèles 3D nécessaires pour la fabrication et manufacturation du PCB et du support à ce même PCB.
-**1.** Modèle 3D de la carte du tableau de bord. 
-[Carte tableau de bord](<3DModels/>)
+**1.** Modèle 3D de la [carte du tableau de bord.](<3DModels/>)
 
-![Carte PCB](cartepcb.png "Carte PCB")
+![Carte PCB](3DModels/cartepcb.png "Carte PCB")
 
-**2.** Modèle 3D du support pour la carte du tableau de bord et le raspberry pi. 
-[Support](<3DModels/>)
+**2.** Modèle 3D du [support](<3DModels/>) pour la carte du tableau de bord et le raspberry pi. 
 
-![Support](support.png "Support")
+![Support](3DModels/support.png "Support")
 
 ### Autres
+
+Cette section contient le journal de bord, la distribution des tâches au travers de la journée, les difficultées rencontrées ainsi que les solutions trouvées à ces mêmes problèmes.
+
+### Code
+Cette section contient les fichiers code du [STM32](<Code/STM32/>) et du [Raspberry Pi](<Code/STM32/>)
+
+- #### Raspberry Pi 3b
+**tk_main.py** code gérant l'affichage de l'interface de l'utilisateur et la communication UART. 
+
+**icons** fichier contenant les icones nécessaire pour l'affichage de l'interface utilisateur.
+
+- #### STM32
+
+**stm32_main.c** code "pass through" de l'information uart, faisant le pont entre la carte de contrôle et le raspberry pi.
+
+### Datasheets
+Cette section contient les diverses [datasheets](<Datasheets/>) utilisées pour la conception du schéma électrique. 
 
 ### Schéma
 La section "Schematics" du dépôt github contient les shémas suivant : 
