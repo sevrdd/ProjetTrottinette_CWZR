@@ -91,7 +91,19 @@ try:
 except:
     print("Port not found, using dummy data instead.")
 ```
-Cette fonction gère la configuration graphique de l'arrière plan selon la puissance fournis au moteur (le pourcentage fournis et non l'ampérage fournis)
+Cette section du code gère la configuration graphique de l'arrière plan selon la puissance fournis au moteur (le pourcentage fournis et non l'ampérage fournis)
+
+#### code STM32 main.c
+
+```python
+if(HAL_UART_Receive(&huart1, &byte, 1, 0) == HAL_OK) //agis comme pass through bridge
+
+    if(HAL_UART_Receive(&huart1, &byte, 1, 0) == HAL_OK)
+    {
+        HAL_UART_Transmit(&huart2, &byte, 1, HAL_MAX_DELAY);
+    }
+```
+Cette fonction agis comme pass through bridge (renvoie directement les informations reçue par la carte de contrôle vers le raspberry pi)
 
 ### Codes d'erreurs
 
