@@ -35,7 +35,7 @@
     - Le boitier à été envoyer en production
     - Du contenue a été ajouté au README
     - L'assemblage du PCB à terminer
-        - On avait pas de Fil pour continuer le plan de teste
+        - On avait pas de fil pour continuer le plan de teste
 ## 27 Avril
     - On a trouver un fil pour continuer le plan de test du PCB
     - Les trous du boitier pour fixer le PCB sont trop loin un de l'autre.
