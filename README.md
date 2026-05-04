@@ -17,7 +17,7 @@ Une trottinette fonctionelle (*nom du modèle de la trottinette ici*) auquelle l
 **3.** Écran (raspberry PI)
 ### Logiciel
 **1.** Python
-    - Tkinter et Pillow doinvent etre installer
+    - Tkinter et Pillow doivent être installé
     - pip install Pillow
     - pip install tk 
 
