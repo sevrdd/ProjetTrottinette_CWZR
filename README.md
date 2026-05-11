@@ -103,7 +103,7 @@ Voir [Guide d'utilisateur](<Guides/guide_user.md>)
 ### Pour un developpeur
 Voir [Guide de développement](<Guides/guide_dev.md>)
 
-### Modifications future
+### Modifications à faire
 - Révision du PCB
      - Changement du régulateur
            - 12V -> 5V Switching Régulateur, 5V -> 3V3 Régulateur LDO. Cela nous permet d'intégrer l'alimentation par USB-C  
