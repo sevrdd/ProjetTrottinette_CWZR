@@ -35,7 +35,7 @@ La version actuelle est limitée à une utilisation stationnaire dû à l'écran
 ## Structure
 
 ### 3DModels
-Cette section regroupe les modèles 3D nécessaires pour la fabrication et la manufacturation du PCB et du support associé à ce même PCB.
+Cette section regroupe les [modèles 3D](<3DModels/>) nécessaires pour la fabrication et la manufacturation du PCB et du support associé à ce même PCB.
 
 **1.** Modèle 3D de la [carte du tableau de bord.](<3DModels/>)
 
@@ -44,10 +44,6 @@ Cette section regroupe les modèles 3D nécessaires pour la fabrication et la ma
 **2.** Modèle 3D du [support](<3DModels/>) pour la carte du tableau de bord et le raspberry pi. 
 
 ![Support](3DModels/support.png "Support")
-
-### Journal
-
-Cette section contient le journal de bord, la distribution des tâches au travers de la journée, les difficultés rencontrées ainsi que les solutions trouvées à ces mêmes problèmes.
 
 ### Code
 Cette section contient les fichiers code du [STM32](<Code/STM32/>) et du [Raspberry Pi](<Code/STM32/>)
@@ -67,8 +63,12 @@ Cette section contient les diverses [datasheets](<Datasheets/>) utilisées pour 
 ### Guides
 Cette section contient les [guides](<Guides/>) pour utilisateur et développeur.
 
+### Journal
+
+Cette section contient le [journal](<Journal/>) de bord, la distribution des tâches au travers de la journée, les difficultés rencontrées ainsi que les solutions trouvées à ces mêmes problèmes.
+
 ### PCB
-Cette section contient les divers [symboles, footprints et modèles](<PCB/Symbols, footprints and models>) nécessaire pour la conception de la carte PCB ainsi que le plan de test complété. 
+Cette [section](<PCB/>) contient les divers [symboles, footprints et modèles](<PCB/Symbols, footprints and models>) nécessaire pour la conception de la carte PCB ainsi que le plan de test complété. 
 
 #### Fichier des symboles, footprints et modèles
 - Fichier contenant les éléments nécessaires pour la conception de la carte PCB.
@@ -77,7 +77,7 @@ Cette section contient les divers [symboles, footprints et modèles](<PCB/Symbol
 - Plan de test complété.
 
 ### Schéma
-La section "Schematics" du dépôt github contient les shémas suivant : 
+La section ["Schematics](<Schematics/>) du dépôt github contient les shémas suivant : 
 
 **1.** Shéma bloc *Vielle version* 
 
