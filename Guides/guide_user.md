@@ -1,7 +1,7 @@
 ## Guide d'utilisateur
 ### Descritption
 Ceci est le guide d'utilisateur. Il contient les branchements du module tableau de bord et un explication complète de son affichage
-Pour retourner au README clicker [ici](<../README.md>)
+Pour retourner au README cliquer [ici](<../README.md>)
 ### Branchement
 
   **1.** Alimenter le PCB avec l'alimentation 12V
