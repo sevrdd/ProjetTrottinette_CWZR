@@ -45,7 +45,7 @@ Cette section regroupe les modèles 3D nécessaires pour la fabrication et la ma
 
 ![Support](3DModels/support.png "Support")
 
-### Autres
+### Journal
 
 Cette section contient le journal de bord, la distribution des tâches au travers de la journée, les difficultés rencontrées ainsi que les solutions trouvées à ces mêmes problèmes.
 
