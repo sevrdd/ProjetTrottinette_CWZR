@@ -41,3 +41,9 @@
 - Les trous du boitier pour fixer le PCB sont trop loin un de l'autre.
 Après des modifications, une nouvelle version à été envoyer en production
 
+## 4 Mai
+- Assemblage terminé
+- Test de la carte
+      - Régulateur ne fonctionne pas. Nous avons "bypass" en alimentant directement sur le point de test 3V3 -> le STM32 ne s'allume pas (ou n'est pas reconnue sur ordinateur)
+      - Le Raspberry Pi ne laisse pas le code accéder au port UART. Malgré plusieurs essaies, le port UART reste "bloqué".
+- Finalisation du plan de test (complété) et envoyé.
