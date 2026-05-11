@@ -1,10 +1,8 @@
-# SuperStyleTheGoodOne
+# ProjetTrottinette
 
-Zachary Roy, William Champagne
+Projet éffectué par: Zachary Roy et William Champagne
 
-Écran de tableau de bord pour trottinette électrique. 
-
-Ce tableau de bord est capable d'afficher les informations concernant la trottinette de façons éfficace, précise et éfficace sur un écran.
+Ce projet entreprant la conception d'un écran de tableau de bord pour une trottinette électrique. Ce tableau de bord est capable d'afficher les informations concernant la trottinette de façons éfficace, précise et éfficace sur un écran.
 
 ## Prérequis
 Une trottinette fonctionelle (*nom du modèle de la trottinette ici*) auquelle le module de tableau de bord est branché.
@@ -15,17 +13,14 @@ Une trottinette fonctionelle (*nom du modèle de la trottinette ici*) auquelle l
 **2.** PCB    
 
 **3.** Écran (raspberry PI)
+
 ### Logiciel
-**1.** Python
-    - Tkinter et Pillow doivent être installé
-    - pip install Pillow
-    - pip install tk 
-
-
+**1.** STM32CubeIDE, CubeMX et VsCode
+    - Tkinter et Pillow doivent être installé | pip install Pillow, pip install tk 
 
 **1.** Altium -> PCB 
-  
-**2.** STM32CubeIDE et VsCode -> Code pour le STM32 du PCB et Code pour le Raspberry pi 
+    - Librairie Celestial utilisée
+    - Librairie étudiante utilisée
 
 **3.** Fusion 360 -> Modèle 3D 
 
@@ -76,6 +71,7 @@ La section "Schematics" du dépôt github contient les shémas suivant :
 La section "Code" du dépôt github contient les codes suivant : 
 - stm32_main.c -> Code main du microcontrolleur STM32. Il doit être renommé Main.c une fois dans le MCU
 - tk_main.py -> Code python pour l'écran.
+  
 ### Tests/validation
 
 ## Utilisation
