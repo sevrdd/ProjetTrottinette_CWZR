@@ -16,7 +16,10 @@ Une trottinette fonctionelle (*nom du modèle de la trottinette ici*) auquelle l
 
 ### Logiciel
 **1.** STM32CubeIDE, CubeMX et VsCode
-    - Tkinter et Pillow doivent être installé | pip install Pillow, pip install tk 
+    - Tkinter et Pillow doivent être installé  
+    
+    pip install Pillow
+    pip install tk 
 
 **1.** Altium -> PCB 
     - Librairie Celestial utilisée
@@ -32,6 +35,7 @@ La version actuelle est limitée a une utilisation stationnaire dû à l'écran 
 
 ### 3DModels
 Cette section recueille les modèles 3D nécessaires pour la fabrication et manufacturation du PCB et du support à ce même PCB.
+
 **1.** Modèle 3D de la [carte du tableau de bord.](<3DModels/>)
 
 ![Carte PCB](3DModels/cartepcb.png "Carte PCB")
@@ -61,23 +65,24 @@ Cette section contient les diverses [datasheets](<Datasheets/>) utilisées pour 
 
 ### Schéma
 La section "Schematics" du dépôt github contient les shémas suivant : 
+
 **1.** Shéma bloc *Vielle version* 
 
 **2.** Shéma électrique 
 
 **3.** Ordinogrammes | Pour le code du raspberry pi (*Ordinogramme 1*) et le code du STM32 (*Ordinogramme 2*)
 
-### Dossiers/codes
-La section "Code" du dépôt github contient les codes suivant : 
-- stm32_main.c -> Code main du microcontrolleur STM32. Il doit être renommé Main.c une fois dans le MCU
-- tk_main.py -> Code python pour l'écran.
-  
-### Tests/validation
-
 ## Utilisation
 **1.** Brancher et allumer les composantes
+
 **2.** Lancer le logiciel *tk_main.exe* (À faire un executable du code python)
+
 **3.** Utiliser la trottinette
+
+### Code STM32 et Python
+La section "Code" du dépôt github contient les codes suivant : 
+- stm32_main.c -> Code main du microcontrolleur STM32.
+- tk_main.py -> Code python pour l'écran.
 
 ### Pour un utilisateur
 Voir [Guide d'utilisateur](<Guides/guide_user.md>)
