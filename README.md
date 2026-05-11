@@ -105,5 +105,9 @@ Voir [Guide de développement](<Guides/guide_dev.md>)
 
 ### Modifications future
 - Révision du PCB
+     - Changement du régulateur
+           - 12V -> 5V Switching Régulateur, 5V -> 3V3 Régulateur LDO. Cela nous permet d'intégrer l'alimentation par USB-C  
+     - Changer les branchements du connecteur de debug
 - Boitié étanche
-- Remplacer le RaspberryPI (écran)
+- Remplacer le Raspberry PI avec un écran adapter pour une trottinette. Cette modification est pour se rapprocher du projet initiale.
+      - Nécessite un changement du code, du schéma électrique (+ Routage) et du boitié. Cela est donc une modification plus importante à faire lorsque les autres modifications sont éffectuées.
