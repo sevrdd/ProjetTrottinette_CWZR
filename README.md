@@ -1,4 +1,4 @@
-# ProjetTrottinette
+# Projet Trottinette
 
 Projet éffectué par: Zachary Roy et William Champagne
 
