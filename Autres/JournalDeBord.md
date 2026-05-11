@@ -1,49 +1,57 @@
 ## 16 Février
 - Création du projet Altium
-- Création de repo Github
+- Création du repo GitHub
 - Début de la création du schéma électrique
-    - Recherche de composantes nécessaires + datasheets associées
-- Installation TouchGFX
-    - Configuration de l'environnement + recherche sur la librairie
+    - Recherche des composantes nécessaires et des *datasheets* associées
+- Installation de TouchGFX
+    - Configuration de l'environnement et recherche sur la librairie
+
 ## 23 Février
-- Finalisation schéma électrique
-    - Selection du mode de communication (opte pour header = versatile)
+- Finalisation du schéma électrique
+    - Sélection du mode de communication (header choisi pour plus de polyvalence)
     - Examen par les pairs
-- Création du Bom + Envoie du BOM
-- Recherche TouchGFX
+- Création du BOM et envoi du BOM
+- Recherche sur TouchGFX
+
 ## 9 Mars
 - Début du PCB
-- Recherche + Début du code python Tkinter
-    - Structure générale, mais non fonctionnel
+- Recherche et début du code Python Tkinter
+    - Structure générale créée, mais non fonctionnelle
+
 ## 16 Mars
-- Finalisation du PCB + Envoie en Fab
+- Finalisation du PCB et envoi en fabrication
 - Finalisation du développement du code
-    -Fonctionnel + petit système de simulation prêt
+    - Fonctionnel avec un petit système de simulation prêt
+
 ## 23 Mars
-- Installation des librairies + configuration de l'environnement (débug) python pour le raspeberry PI 
-- Tester le code sur raspberry pi (succès)
-- Début modèle 3D
+- Installation des librairies et configuration de l'environnement de déboggage Python pour le Raspberry Pi
+- Test du code sur Raspberry Pi (succès)
+- Début du modèle 3D
+
 ## 30 Mars
-- Finir le boitier + Envoie en Fab
-- Commencement du guide d'utilisateur, documentation plan de test etc...
+- Finalisation du boîtier et envoi en fabrication
+- Début du guide d'utilisateur, de la documentation, du plan de test, etc.
+
 ## 13 Avril
-- Assemblage Board PCB
-    - Les led étaient plus petite que les pads, donc on a dut bridge avec un fil
-    - Les bouttons sont beaucoupt trop gros pour les pads, donc il y a justet le boutton pour reset le stm
-- Continuation de la documentation, du guide d'utilisateur, plan de test, conception de l'ordinogramme etc...
+- Assemblage du PCB
+    - Les DELs étaient plus petites que les pads, donc un *bridge* avec un fil a dû être effectué
+    - Les boutons étaient beaucoup trop gros pour les pads, donc seul le bouton de reset du STM32 a été installé
+- Continuation de la documentation, du guide d'utilisateur, du plan de test, de la conception de l'ordinogramme, etc.
+
 ## 20 Avril
-- Le boitier à été envoyer en production
-- Du contenue a été ajouté au README
-- L'assemblage du PCB à terminer
-    - On avait pas de fil pour continuer le plan de teste
+- Le boîtier a été envoyé en production
+- Du contenu a été ajouté au README
+- L'assemblage du PCB est terminé
+    - Aucun fil disponible pour continuer le plan de test
+
 ## 27 Avril
-- On a trouver un fil pour continuer le plan de test du PCB
-- Les trous du boitier pour fixer le PCB sont trop loin un de l'autre.
-Après des modifications, une nouvelle version à été envoyer en production
+- Un fil a été trouvé pour continuer le plan de test du PCB
+- Les trous du boîtier pour fixer le PCB étaient trop éloignés l'un de l'autre
+    - Après modifications, une nouvelle version a été envoyée en production
 
 ## 4 Mai
 - Assemblage terminé
 - Test de la carte
-      - Régulateur ne fonctionne pas. Nous avons "bypass" en alimentant directement sur le point de test 3V3 -> le STM32 ne s'allume pas (ou n'est pas reconnue sur ordinateur)
-      - Le Raspberry Pi ne laisse pas le code accéder au port UART. Malgré plusieurs essaies, le port UART reste "bloqué".
-- Finalisation du plan de test (complété) et envoyé.
+    - Le régulateur ne fonctionne pas. Un *bypass* a été effectué en alimentant directement le point de test 3V3, mais le STM32 ne s'allume pas (ou n'est pas reconnu par l'ordinateur)
+    - Le Raspberry Pi ne laisse pas le code accéder au port UART. Malgré plusieurs essais, le port UART reste bloqué
+- Finalisation du plan de test (complété et envoyé)
