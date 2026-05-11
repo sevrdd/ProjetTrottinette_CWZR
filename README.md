@@ -77,7 +77,7 @@ Cette [section](<PCB/>) contient les divers [symboles, footprints et modèles](<
 - Plan de test complété.
 
 ### Schéma
-La section ["Schematics](<Schematics/>) du dépôt github contient les shémas suivant : 
+La section ["Schematics"](<Schematics/>) du dépôt github contient les shémas suivant : 
 
 **1.** Shéma bloc *Vielle version* 
 
