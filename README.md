@@ -65,7 +65,7 @@ Cette section contient les fichiers code du [STM32](<Code/STM32/>) et du [Raspbe
 Cette section contient les diverses [datasheets](<Datasheets/>) utilisées pour la conception du schéma électrique. 
 
 ### Guides
-Cette section contient les guides pour utilisateur et développeur.
+Cette section contient les [guides](<Guides/>) pour utilisateur et développeur.
 
 ### PCB
 Cette section contient les divers [symboles, footprints et modèles](<PCB/Symbols, footprints and models>) nécessaire pour la conception de la carte PCB ainsi que le plan de test complété. 
