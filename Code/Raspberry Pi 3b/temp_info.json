@@ -4,7 +4,7 @@
     "HW_ver": 1.0,
     "ctrl": {
         "state": "DRIVE",
-        "break_active": "true",
+        "break_active": "false",
         "estop_active": "true",
         "enable_active": "true",
         "light_active": "true",
