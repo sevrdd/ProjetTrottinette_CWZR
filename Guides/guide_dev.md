@@ -12,7 +12,7 @@ Pour retourner au README clicker [ici](<../README.md>)
  
 **5.** Brancher le BMI avec un câble I2C | Exemple: [4399](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4399/10824268?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrVaYoQh6BjAgbfN6MktjoXuiRVQwjho6AzrgFkBbMqADUwDK0_j78aAlHEEALw_wcB)
 
-**6.** Brancher un cable style arduino [1956](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/1956/6827089?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrF_uWWoAdkNR1Ewwv0g-x9TCiTK35vVDDhfwSZ4tV42QfpkmZLDrMaAquCEALw_wcB) entre la patte 1 du header (Tx) *J3* sur la carte STM32 et la patte *insère pin ici* du Raspberry Pi. Refaire ces mêmes opérations entre la patte 3 du header (Rx) *J3* sur la carte STM32 et la patte *insère l'autre pin ici lol* du Raspberry Pi. Cela établi la communication UART entre la carte STM32 et le Raspberry Pi. Images des pattes de la carte STM32 et du Raspberry Pi. ![Voir image ici](headerj3_2d.png "HeaderJ3_2D")
+**6.** Brancher un cable style arduino [1956](https://www.digikey.ca/en/products/detail/adafruit-industries-llc/1956/6827089?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gclid=Cj0KCQjwqPLOBhCiARIsAKRMPZrF_uWWoAdkNR1Ewwv0g-x9TCiTK35vVDDhfwSZ4tV42QfpkmZLDrMaAquCEALw_wcB) entre la patte 1 du header (Tx) *J3* sur la carte STM32 et la patte 8 du Raspberry Pi. Refaire ces mêmes opérations entre la patte 3 du header (Rx) *J3* sur la carte STM32 et la patte 10 du Raspberry Pi. Cela établi la communication UART entre la carte STM32 et le Raspberry Pi. Images des pattes de la carte STM32 et du Raspberry Pi. ![Voir image ici](headerj3_2d.png "HeaderJ3_2D")
 
 ![Version 3D](headerj3_3d.png "HeaderJ3_3D").
 
@@ -31,11 +31,11 @@ Pour retourner au README clicker [ici](<../README.md>)
 
 **2.** D2 s'allume quand l'alimentation 12V est présente (Alim Debug)
 
-**3.** D3 s'allume quand un signal vers GPIO18 (vers la carte contrôle) est envoyé **To redo**
+**3.** D3 s'allume quand un signal vers GPIO18 (du tableau de bord vers la carte contrôle) est envoyé 
 
-**4.** D4 s'allume quand un signal vers GPIO21 (vers la carte contrôle) est envoyé **To redo**
+**4.** D4 s'allume quand un signal vers GPIO21 (du tableau de bord vers la carte contrôle) est envoyé 
 
-**5.** D4 s'allume quand un signal vers GPIO0 (vers la carte contrôle) est envoyé **To redo**
+**5.** D4 s'allume quand un signal vers GPIO0 (du tableau de bord vers la carte contrôle) est envoyé 
 
 **6.** D5 et D6 sont des DELs de déboggages programmables (à partir du code STM32).
 #### Switches
@@ -53,9 +53,11 @@ Pour retourner au README clicker [ici](<../README.md>)
 
 ### Résumé du code
 
+Le code commence par tenter d'accèder au port UART. Ensuite, il traite les données (sous format JSON) et éffectue la logique vue dans l'ordinogramme. Il affiche ensuite les informations sous forme d'un interface utilisateur.
+
 #### Ordinogramme
 
-![Alt text](ordinogramme_temp.jpg "Ordinogramme")
+![Alt text](ordinogramme.jpg "Ordinogramme")
 
 #### tk_main_exp.py
 *L'ensemble des fonctions du code raspberry pi est contenue dans la classe:*
