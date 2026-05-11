@@ -2,10 +2,10 @@
 
 Projet éffectué par: Zachary Roy et William Champagne
 
-Ce projet entreprant la conception d'un écran de tableau de bord pour une trottinette électrique. Ce tableau de bord est capable d'afficher les informations concernant la trottinette de façons éfficace, précise et éfficace sur un écran.
+Ce projet entreprend la conception d'un écran de tableau de bord pour une trottinette électrique. Ce tableau de bord est capable d'afficher les informations concernant la trottinette de façon efficace et précise sur un écran.
 
 ## Prérequis
-Une trottinette fonctionelle (*nom du modèle de la trottinette ici*) auquelle le module de tableau de bord est branché.
+Une trottinette fonctionelle à laquelle le module de tableau de bord est branché.
 
 ### Matériel
 **1.** Boitier
@@ -28,13 +28,14 @@ Une trottinette fonctionelle (*nom du modèle de la trottinette ici*) auquelle l
 **3.** Fusion 360 -> Modèle 3D 
 
 ### Limitations
-L'affichage est limité à une vitesse de rafraîchissement de 5 Hz
-La version actuelle est limitée a une utilisation stationnaire dû à l'écran hdmi nécéssitant une station fixe.
+L'affichage est limité à une vitesse de rafraîchissement de 5 Hz.
+
+La version actuelle est limitée à une utilisation stationnaire dû à l'écran HDMI nécessitant une station fixe.
 
 ## Structure
 
 ### 3DModels
-Cette section recueille les modèles 3D nécessaires pour la fabrication et manufacturation du PCB et du support à ce même PCB.
+Cette section regroupe les modèles 3D nécessaires pour la fabrication et la manufacturation du PCB et du support associé à ce même PCB.
 
 **1.** Modèle 3D de la [carte du tableau de bord.](<3DModels/>)
 
@@ -46,7 +47,7 @@ Cette section recueille les modèles 3D nécessaires pour la fabrication et manu
 
 ### Autres
 
-Cette section contient le journal de bord, la distribution des tâches au travers de la journée, les difficultées rencontrées ainsi que les solutions trouvées à ces mêmes problèmes.
+Cette section contient le journal de bord, la distribution des tâches au travers de la journée, les difficultés rencontrées ainsi que les solutions trouvées à ces mêmes problèmes.
 
 ### Code
 Cette section contient les fichiers code du [STM32](<Code/STM32/>) et du [Raspberry Pi](<Code/STM32/>)
@@ -62,6 +63,18 @@ Cette section contient les fichiers code du [STM32](<Code/STM32/>) et du [Raspbe
 
 ### Datasheets
 Cette section contient les diverses [datasheets](<Datasheets/>) utilisées pour la conception du schéma électrique. 
+
+### Guides
+Cette section contient les guides pour utilisateur et développeur.
+
+### PCB
+Cette section contient les divers [symboles, footprints et modèles](<PCB/Symbols, footprints and models>) nécessaire pour la conception de la carte PCB ainsi que le plan de test complété. 
+
+#### Fichier des symboles, footprints et modèles
+- Fichier contenant les éléments nécessaires pour la conception de la carte PCB.
+
+#### Plan de test
+- Plan de test complété.
 
 ### Schéma
 La section "Schematics" du dépôt github contient les shémas suivant : 
@@ -89,5 +102,3 @@ Voir [Guide d'utilisateur](<Guides/guide_user.md>)
 
 ### Pour un developpeur
 Voir [Guide de développement](<Guides/guide_dev.md>)
-
-### Prochaines étapes (todo)
