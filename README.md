@@ -83,7 +83,7 @@ La section ["Schematics"](<Schematics/>) du dépôt github contient les shémas 
 
 **2.** Shéma électrique 
 
-**3.** Ordinogrammes | Pour le code du raspberry pi (*Ordinogramme 1*) et le code du STM32 (*Ordinogramme 2*)
+**3.** Ordinogramme | Pour le code du raspberry pi 
 
 ## Utilisation
 **1.** Brancher et allumer les composantes
