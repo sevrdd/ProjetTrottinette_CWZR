@@ -102,3 +102,8 @@ Voir [Guide d'utilisateur](<Guides/guide_user.md>)
 
 ### Pour un developpeur
 Voir [Guide de développement](<Guides/guide_dev.md>)
+
+### Modification future
+- Révision du PCB
+- Boitié étanche
+- Remplacer le RaspberryPI (écran)
